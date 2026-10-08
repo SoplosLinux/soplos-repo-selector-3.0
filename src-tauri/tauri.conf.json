@@ -1,0 +1,60 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "soplos-repo-selector",
+  "version": "3.0.0-1-beta",
+  "identifier": "org.soplos.reposelector",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devUrl": "http://localhost:1423",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Soplos Repo Selector",
+        "width": 1100,
+        "height": 720,
+        "minWidth": 900,
+        "minHeight": 600,
+        "resizable": true,
+        "dragDropEnabled": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["deb"],
+    "publisher": "Sergi Perich",
+    "homepage": "https://soplos.org",
+    "copyright": "Copyright © 2026 Sergi Perich",
+    "license": "GPL-3.0-or-later",
+    "licenseFile": "../LICENSE",
+    "category": "Utility",
+    "shortDescription": "Advanced APT repository manager for Soplos Linux",
+    "longDescription": "Manage, optimize and configure APT software repositories for Soplos Linux: enable/disable repos, modernize legacy .list files to DEB822 .sources, find the fastest mirrors, and manage GPG signing keys.",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.png"
+    ],
+    "linux": {
+      "deb": {
+        "section": "utils",
+        "priority": "optional",
+        "depends": ["pkexec", "gnupg"],
+        "recommends": ["curl", "wget"],
+        "desktopTemplate": "resources/debian/soplos-repo-selector.desktop.hbs",
+        "files": {
+          "/usr/share/metainfo/org.soplos.reposelector.metainfo.xml": "resources/appstream/org.soplos.reposelector.metainfo.xml",
+          "/usr/share/doc/soplos-repo-selector/copyright": "resources/debian/copyright",
+          "/usr/share/polkit-1/actions/org.soplos.reposelector.policy": "resources/polkit/org.soplos.reposelector.policy"
+        }
+      }
+    }
+  }
+}

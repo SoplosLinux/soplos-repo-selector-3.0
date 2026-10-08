@@ -1,0 +1,97 @@
+{
+  "app": {
+    "title": "Soplos Repo Selector",
+    "comingSoon": "La gestion des dépôts arrive bientôt.",
+    "tabs": {
+      "repositories": { "label": "Dépôts", "title": "Dépôts", "description": "Activez, désactivez, ajoutez ou supprimez vos sources logicielles APT." },
+      "sourcesGenerator": { "label": "Générateur de sources", "title": "Générateur de sources", "description": "Générez des dépôts à partir de modèles de distribution et trouvez le miroir le plus rapide." },
+      "gpgKeys": { "label": "Clés GPG", "title": "Clés GPG", "description": "Importez, téléchargez et gérez les clés qui vérifient vos dépôts." }
+    }
+  },
+  "about": {
+    "version": "Version {version}",
+    "tagline": "Gestionnaire avancé de dépôts APT pour Soplos Linux",
+    "copyright": "Copyright © 2026 Sergi Perich",
+    "license": "Sous licence GNU General Public License v3.0 ou ultérieure",
+    "website": "soplos.org"
+  },
+  "common": {
+    "cancel": "Annuler",
+    "ok": "OK",
+    "close": "Fermer",
+    "save": "Enregistrer",
+    "loading": "Chargement…",
+    "errorTitle": "Un problème est survenu"
+  },
+  "repositories": {
+    "enable": "Activer",
+    "disable": "Désactiver",
+    "modernize": "Moderniser vers DEB822",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "searchPlaceholder": "Rechercher des dépôts…",
+    "add": "Ajouter",
+    "apply": "Appliquer les modifications",
+    "applying": "Application…",
+    "empty": "Aucun dépôt trouvé.",
+    "addTitle": "Ajouter un dépôt",
+    "editTitle": "Modifier le dépôt",
+    "type": "Type",
+    "uri": "URI",
+    "distribution": "Distribution",
+    "components": "Composants",
+    "signedBy": "Signed-By (chemin de la clé GPG)",
+    "deleteConfirmTitle": "Supprimer ce dépôt ?",
+    "deleteConfirmBody": "Ceci le retire seulement de la liste — cliquez sur \"Appliquer les modifications\" pour l'écrire sur le disque."
+  },
+  "gpg": {
+    "import": "Importer une clé",
+    "unused": "Inutilisée",
+    "unusedHint": "Aucun dépôt configuré ne référence plus cette clé",
+    "unusedSummary": "{count, plural, one {# clé n'est} other {# clés ne sont}} plus utilisée par aucun dépôt configuré.",
+    "export": "Exporter",
+    "confirmDelete": "Confirmer la suppression",
+    "fingerprint": "Empreinte",
+    "expires": "Expire",
+    "empty": "Aucune clé GPG trouvée."
+  },
+  "sourcesGenerator": {
+    "distributions": "Distributions",
+    "distributionsHint": "Choisissez les versions de Debian dont vous voulez des paquets. La plupart des gens n'en ont besoin que d'une seule.",
+    "includeBackports": "Inclure les Backports",
+    "components": "Composants",
+    "componentsHint": "main est le logiciel libre officiel ; contrib, non-free et non-free-firmware ajoutent des logiciels et pilotes non libres.",
+    "includeSourcePackages": "Inclure les paquets source (deb-src)",
+    "mirror": "Miroir",
+    "mirrorHint": "Le serveur depuis lequel votre système télécharge les paquets. Choisissez le plus rapide pour votre emplacement.",
+    "currentMirror": "Miroir actuel",
+    "findFastest": "Trouver le miroir le plus rapide",
+    "testing": "Test en cours…",
+    "statusTesting": "test en cours…",
+    "measuringLatency": "Mesure de la latence…",
+    "statusFailed": "échoué",
+    "progress": "{tested} miroirs testés sur {total}",
+    "recommended": "Recommandé",
+    "selected": "Sélectionné",
+    "use": "Utiliser",
+    "detected": "Prérempli depuis vos dépôts actuels.",
+    "generate": "Générer la liste des sources",
+    "generating": "Génération…",
+    "successTitle": "Sources générées",
+    "successBody": "Les fichiers de dépôt ont été écrits et apt a été mis à jour."
+  },
+  "sidebar": {
+    "switchToLight": "Passer au thème clair",
+    "switchToDark": "Passer au thème sombre",
+    "aboutTooltip": "À propos de Soplos Repo Selector (F1)",
+    "language": "Langue"
+  },
+  "environment": {
+    "gnome": "GNOME",
+    "kde": "KDE Plasma",
+    "xfce": "XFCE",
+    "unknown": "Inconnu",
+    "x11": "X11",
+    "wayland": "Wayland"
+  }
+}

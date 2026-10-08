@@ -1,0 +1,34 @@
+[package]
+name = "soplos-repo-selector"
+version = "3.0.0-1-beta"
+description = "Soplos Repo Selector"
+authors = ["Sergi Perich <info@soploslinux.com>"]
+license = "GPL-3.0-or-later"
+edition = "2021"
+
+[lib]
+name = "soplos_repo_selector_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+# No "devtools" feature here: Tauri already enables the inspector
+# automatically on debug builds (cfg(debug_assertions)); declaring the
+# feature would force it on in release builds too.
+tauri = { version = "2", features = [] }
+tauri-plugin-shell = "2"
+tauri-plugin-dialog = "2"
+tauri-plugin-single-instance = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# Mirror speed test: streaming downloads to measure real throughput.
+ureq = "3"
+
+[profile.release]
+panic = "abort"
+codegen-units = 1
+lto = true
+opt-level = "s"
+strip = true

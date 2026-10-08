@@ -1,0 +1,97 @@
+{
+  "app": {
+    "title": "Soplos Repo Selector",
+    "comingSoon": "Управление репозиториями появится в ближайшее время.",
+    "tabs": {
+      "repositories": { "label": "Репозитории", "title": "Репозитории", "description": "Включайте, отключайте, добавляйте или удаляйте источники APT." },
+      "sourcesGenerator": { "label": "Генератор источников", "title": "Генератор источников", "description": "Создавайте репозитории из шаблонов дистрибутива и находите самое быстрое зеркало." },
+      "gpgKeys": { "label": "Ключи GPG", "title": "Ключи GPG", "description": "Импортируйте, скачивайте и управляйте ключами, проверяющими ваши репозитории." }
+    }
+  },
+  "about": {
+    "version": "Версия {version}",
+    "tagline": "Продвинутый менеджер APT-репозиториев для Soplos Linux",
+    "copyright": "Copyright © 2026 Sergi Perich",
+    "license": "Лицензировано по GNU General Public License v3.0 или новее",
+    "website": "soplos.org"
+  },
+  "common": {
+    "cancel": "Отмена",
+    "ok": "ОК",
+    "close": "Закрыть",
+    "save": "Сохранить",
+    "loading": "Загрузка…",
+    "errorTitle": "Что-то пошло не так"
+  },
+  "repositories": {
+    "enable": "Включить",
+    "disable": "Отключить",
+    "modernize": "Преобразовать в DEB822",
+    "edit": "Изменить",
+    "delete": "Удалить",
+    "searchPlaceholder": "Поиск репозиториев…",
+    "add": "Добавить",
+    "apply": "Применить изменения",
+    "applying": "Применение…",
+    "empty": "Репозитории не найдены.",
+    "addTitle": "Добавить репозиторий",
+    "editTitle": "Изменить репозиторий",
+    "type": "Тип",
+    "uri": "URI",
+    "distribution": "Дистрибутив",
+    "components": "Компоненты",
+    "signedBy": "Signed-By (путь к ключу GPG)",
+    "deleteConfirmTitle": "Удалить этот репозиторий?",
+    "deleteConfirmBody": "Это только уберёт его из списка — нажмите «Применить изменения», чтобы записать на диск."
+  },
+  "gpg": {
+    "import": "Импортировать ключ",
+    "unused": "Не используется",
+    "unusedHint": "Ни один настроенный репозиторий больше не ссылается на этот ключ",
+    "unusedSummary": "{count, plural, one {# ключ} few {# ключа} many {# ключей} other {# ключа}} больше не используется ни одним настроенным репозиторием.",
+    "export": "Экспортировать",
+    "confirmDelete": "Подтвердить удаление",
+    "fingerprint": "Отпечаток",
+    "expires": "Истекает",
+    "empty": "Ключи GPG не найдены."
+  },
+  "sourcesGenerator": {
+    "distributions": "Дистрибутивы",
+    "distributionsHint": "Выберите версии Debian, для которых нужны пакеты. Большинству достаточно одной.",
+    "includeBackports": "Включить Backports",
+    "components": "Компоненты",
+    "componentsHint": "main — официальное свободное ПО; contrib, non-free и non-free-firmware добавляют несвободное ПО и драйверы.",
+    "includeSourcePackages": "Включить исходные пакеты (deb-src)",
+    "mirror": "Зеркало",
+    "mirrorHint": "Сервер, с которого система загружает пакеты. Выберите самый быстрый для вашего региона.",
+    "currentMirror": "Текущее зеркало",
+    "findFastest": "Найти самое быстрое зеркало",
+    "testing": "Проверка…",
+    "statusTesting": "проверка…",
+    "measuringLatency": "Измерение задержки…",
+    "statusFailed": "ошибка",
+    "progress": "Проверено {tested} из {total} зеркал",
+    "recommended": "Рекомендуется",
+    "selected": "Выбрано",
+    "use": "Использовать",
+    "detected": "Заполнено на основе текущих репозиториев.",
+    "generate": "Создать список источников",
+    "generating": "Создание…",
+    "successTitle": "Источники созданы",
+    "successBody": "Файлы репозитория записаны, apt обновлён."
+  },
+  "sidebar": {
+    "switchToLight": "Переключить на светлую тему",
+    "switchToDark": "Переключить на тёмную тему",
+    "aboutTooltip": "О Soplos Repo Selector (F1)",
+    "language": "Язык"
+  },
+  "environment": {
+    "gnome": "GNOME",
+    "kde": "KDE Plasma",
+    "xfce": "XFCE",
+    "unknown": "Неизвестно",
+    "x11": "X11",
+    "wayland": "Wayland"
+  }
+}

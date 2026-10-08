@@ -1,0 +1,97 @@
+{
+  "app": {
+    "title": "Soplos Repo Selector",
+    "comingSoon": "La gestión de repositorios estará disponible próximamente.",
+    "tabs": {
+      "repositories": { "label": "Repositorios", "title": "Repositorios", "description": "Activa, desactiva, añade o elimina tus fuentes de software APT." },
+      "sourcesGenerator": { "label": "Generador de fuentes", "title": "Generador de fuentes", "description": "Genera repositorios desde plantillas de distribución y encuentra el mirror más rápido." },
+      "gpgKeys": { "label": "Claves GPG", "title": "Claves GPG", "description": "Importa, descarga y gestiona las claves que verifican tus repositorios." }
+    }
+  },
+  "about": {
+    "version": "Versión {version}",
+    "tagline": "Gestor avanzado de repositorios APT para Soplos Linux",
+    "copyright": "Copyright © 2026 Sergi Perich",
+    "license": "Con licencia GNU General Public License v3.0 o posterior",
+    "website": "soplos.org"
+  },
+  "common": {
+    "cancel": "Cancelar",
+    "ok": "Aceptar",
+    "close": "Cerrar",
+    "save": "Guardar",
+    "loading": "Cargando…",
+    "errorTitle": "Algo ha ido mal"
+  },
+  "repositories": {
+    "enable": "Activar",
+    "disable": "Desactivar",
+    "modernize": "Modernizar a DEB822",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "searchPlaceholder": "Buscar repositorios…",
+    "add": "Añadir",
+    "apply": "Aplicar cambios",
+    "applying": "Aplicando…",
+    "empty": "No se han encontrado repositorios.",
+    "addTitle": "Añadir repositorio",
+    "editTitle": "Editar repositorio",
+    "type": "Tipo",
+    "uri": "URI",
+    "distribution": "Distribución",
+    "components": "Componentes",
+    "signedBy": "Signed-By (ruta de la clave GPG)",
+    "deleteConfirmTitle": "¿Eliminar este repositorio?",
+    "deleteConfirmBody": "Esto solo lo quita de la lista — pulsa \"Aplicar cambios\" para escribirlo en disco."
+  },
+  "gpg": {
+    "import": "Importar clave",
+    "unused": "Sin usar",
+    "unusedHint": "Ningún repositorio configurado hace referencia ya a esta clave",
+    "unusedSummary": "{count, plural, one {Hay # clave que} other {Hay # claves que}} ya no usa ningún repositorio configurado.",
+    "export": "Exportar",
+    "confirmDelete": "Confirmar borrado",
+    "fingerprint": "Huella",
+    "expires": "Caduca",
+    "empty": "No se han encontrado claves GPG."
+  },
+  "sourcesGenerator": {
+    "distributions": "Distribuciones",
+    "distributionsHint": "Elige las versiones de Debian de las que quieres paquetes. La mayoría solo necesita una.",
+    "includeBackports": "Incluir Backports",
+    "components": "Componentes",
+    "componentsHint": "main es software libre oficial; contrib, non-free y non-free-firmware añaden software y controladores privativos.",
+    "includeSourcePackages": "Incluir paquetes fuente (deb-src)",
+    "mirror": "Mirror",
+    "mirrorHint": "El servidor desde el que tu sistema descarga los paquetes. Elige el más rápido para tu ubicación.",
+    "currentMirror": "Mirror actual",
+    "findFastest": "Buscar el mirror más rápido",
+    "testing": "Probando…",
+    "statusTesting": "probando…",
+    "measuringLatency": "Midiendo latencia…",
+    "statusFailed": "fallido",
+    "progress": "Probados {tested} de {total} mirrors",
+    "recommended": "Recomendado",
+    "selected": "Seleccionado",
+    "use": "Usar",
+    "detected": "Rellenado con tus repositorios actuales.",
+    "generate": "Generar lista de fuentes",
+    "generating": "Generando…",
+    "successTitle": "Fuentes generadas",
+    "successBody": "Se han escrito los archivos de repositorio y se ha actualizado apt."
+  },
+  "sidebar": {
+    "switchToLight": "Cambiar a tema claro",
+    "switchToDark": "Cambiar a tema oscuro",
+    "aboutTooltip": "Acerca de Soplos Repo Selector (F1)",
+    "language": "Idioma"
+  },
+  "environment": {
+    "gnome": "GNOME",
+    "kde": "KDE Plasma",
+    "xfce": "XFCE",
+    "unknown": "Desconocido",
+    "x11": "X11",
+    "wayland": "Wayland"
+  }
+}

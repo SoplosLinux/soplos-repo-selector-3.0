@@ -1,0 +1,97 @@
+{
+  "app": {
+    "title": "Soplos Repo Selector",
+    "comingSoon": "Repository management is coming soon.",
+    "tabs": {
+      "repositories": { "label": "Repositories", "title": "Repositories", "description": "Enable, disable, add or remove your APT software sources." },
+      "sourcesGenerator": { "label": "Sources Generator", "title": "Sources Generator", "description": "Generate repositories from distribution templates and find the fastest mirror." },
+      "gpgKeys": { "label": "GPG Keys", "title": "GPG Keys", "description": "Import, download and manage the keys that verify your repositories." }
+    }
+  },
+  "about": {
+    "version": "Version {version}",
+    "tagline": "Advanced APT repository manager for Soplos Linux",
+    "copyright": "Copyright © 2026 Sergi Perich",
+    "license": "Licensed under the GNU General Public License v3.0 or later",
+    "website": "soplos.org"
+  },
+  "common": {
+    "cancel": "Cancel",
+    "ok": "OK",
+    "close": "Close",
+    "save": "Save",
+    "loading": "Loading…",
+    "errorTitle": "Something went wrong"
+  },
+  "repositories": {
+    "enable": "Enable",
+    "disable": "Disable",
+    "modernize": "Modernize to DEB822",
+    "edit": "Edit",
+    "delete": "Delete",
+    "searchPlaceholder": "Search repositories…",
+    "add": "Add",
+    "apply": "Apply Changes",
+    "applying": "Applying…",
+    "empty": "No repositories found.",
+    "addTitle": "Add repository",
+    "editTitle": "Edit repository",
+    "type": "Type",
+    "uri": "URI",
+    "distribution": "Distribution",
+    "components": "Components",
+    "signedBy": "Signed-By (GPG key path)",
+    "deleteConfirmTitle": "Remove this repository?",
+    "deleteConfirmBody": "This only removes it from the list — click \"Apply Changes\" to write it to disk."
+  },
+  "gpg": {
+    "import": "Import Key",
+    "unused": "Unused",
+    "unusedHint": "No configured repository references this key anymore",
+    "unusedSummary": "{count, plural, one {# key is} other {# keys are}} no longer used by any configured repository.",
+    "export": "Export",
+    "confirmDelete": "Confirm Delete",
+    "fingerprint": "Fingerprint",
+    "expires": "Expires",
+    "empty": "No GPG keys found."
+  },
+  "sourcesGenerator": {
+    "distributions": "Distributions",
+    "distributionsHint": "Pick the Debian versions you want packages from. Most people only need one.",
+    "includeBackports": "Include Backports",
+    "components": "Components",
+    "componentsHint": "main is official free software; contrib, non-free and non-free-firmware add non-free software and drivers.",
+    "includeSourcePackages": "Include source packages (deb-src)",
+    "mirror": "Mirror",
+    "mirrorHint": "The server your system downloads packages from. Pick the fastest one for your location.",
+    "currentMirror": "Current mirror",
+    "findFastest": "Find Fastest Mirror",
+    "testing": "Testing…",
+    "statusTesting": "testing…",
+    "measuringLatency": "Measuring latency…",
+    "statusFailed": "failed",
+    "progress": "Tested {tested} of {total} mirrors",
+    "recommended": "Recommended",
+    "selected": "Selected",
+    "use": "Use",
+    "detected": "Prefilled from your current repositories.",
+    "generate": "Generate Source List",
+    "generating": "Generating…",
+    "successTitle": "Sources generated",
+    "successBody": "The repository files were written and apt was updated."
+  },
+  "sidebar": {
+    "switchToLight": "Switch to light theme",
+    "switchToDark": "Switch to dark theme",
+    "aboutTooltip": "About Soplos Repo Selector (F1)",
+    "language": "Language"
+  },
+  "environment": {
+    "gnome": "GNOME",
+    "kde": "KDE Plasma",
+    "xfce": "XFCE",
+    "unknown": "Unknown",
+    "x11": "X11",
+    "wayland": "Wayland"
+  }
+}

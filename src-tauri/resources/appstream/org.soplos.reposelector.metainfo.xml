@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>org.soplos.reposelector</id>
+  <pkgname>soplos-repo-selector</pkgname>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <project_group>org.soploslinux</project_group>
+
+  <name>Soplos Repo Selector</name>
+  <summary>Advanced APT repository manager for Soplos Linux</summary>
+
+  <description>
+    <p>
+      Soplos Repo Selector manages APT software repositories for Soplos
+      Linux: enable or disable repositories, modernize legacy .list files to
+      DEB822 .sources, find the fastest mirrors with a real speed test, and
+      manage GPG signing keys.
+    </p>
+  </description>
+
+  <launchable type="desktop-id">org.soplos.reposelector.desktop</launchable>
+
+  <provides>
+    <binary>soplos-repo-selector</binary>
+  </provides>
+
+  <url type="homepage">https://soplos.org</url>
+
+  <developer id="org.soploslinux">
+    <name>Sergi Perich</name>
+  </developer>
+
+  <releases>
+    <release version="3.0.0-1-beta" date="2026-10-08">
+      <description>
+        <p>Unused GPG key detection and an updated sidebar icon.</p>
+        <ul>
+          <li>GPG Keys now flags keys no repository references anymore and that don't belong to any installed package</li>
+          <li>Updated sidebar icon</li>
+        </ul>
+      </description>
+    </release>
+    <release version="3.0.0-alpha" date="2026-10-03">
+      <description>
+        <p>Full architecture rewrite of Soplos Repo Selector, from Python 3 and GTK3 to Tauri 2 with a Rust backend and a Svelte frontend.</p>
+      </description>
+    </release>
+  </releases>
+
+  <content_rating type="oars-1.1" />
+</component>

@@ -1,0 +1,97 @@
+{
+  "app": {
+    "title": "Soplos Repo Selector",
+    "comingSoon": "Gestionarea depozitelor va fi disponibilă în curând.",
+    "tabs": {
+      "repositories": { "label": "Depozite", "title": "Depozite", "description": "Activează, dezactivează, adaugă sau elimină sursele tale de software APT." },
+      "sourcesGenerator": { "label": "Generator de surse", "title": "Generator de surse", "description": "Generează depozite din șabloane de distribuție și găsește cel mai rapid mirror." },
+      "gpgKeys": { "label": "Chei GPG", "title": "Chei GPG", "description": "Importă, descarcă și gestionează cheile care verifică depozitele tale." }
+    }
+  },
+  "about": {
+    "version": "Versiunea {version}",
+    "tagline": "Manager avansat de depozite APT pentru Soplos Linux",
+    "copyright": "Copyright © 2026 Sergi Perich",
+    "license": "Licențiat sub GNU General Public License v3.0 sau ulterioară",
+    "website": "soplos.org"
+  },
+  "common": {
+    "cancel": "Anulează",
+    "ok": "OK",
+    "close": "Închide",
+    "save": "Salvează",
+    "loading": "Se încarcă…",
+    "errorTitle": "Ceva nu a funcționat"
+  },
+  "repositories": {
+    "enable": "Activează",
+    "disable": "Dezactivează",
+    "modernize": "Modernizează la DEB822",
+    "edit": "Editează",
+    "delete": "Șterge",
+    "searchPlaceholder": "Caută depozite…",
+    "add": "Adaugă",
+    "apply": "Aplică modificările",
+    "applying": "Se aplică…",
+    "empty": "Niciun depozit găsit.",
+    "addTitle": "Adaugă depozit",
+    "editTitle": "Editează depozit",
+    "type": "Tip",
+    "uri": "URI",
+    "distribution": "Distribuție",
+    "components": "Componente",
+    "signedBy": "Signed-By (calea cheii GPG)",
+    "deleteConfirmTitle": "Elimini acest depozit?",
+    "deleteConfirmBody": "Asta îl elimină doar din listă — apasă \"Aplică modificările\" ca să fie scris pe disc."
+  },
+  "gpg": {
+    "import": "Importă cheie",
+    "unused": "Neutilizată",
+    "unusedHint": "Niciun repozitoriu configurat nu mai face referire la această cheie",
+    "unusedSummary": "{count, plural, one {# cheie nu mai este} other {# chei nu mai sunt}} folosită de niciun repozitoriu configurat.",
+    "export": "Exportă",
+    "confirmDelete": "Confirmă ștergerea",
+    "fingerprint": "Amprentă",
+    "expires": "Expiră",
+    "empty": "Nicio cheie GPG găsită."
+  },
+  "sourcesGenerator": {
+    "distributions": "Distribuții",
+    "distributionsHint": "Alege versiunile de Debian pentru care vrei pachete. Majoritatea au nevoie doar de una.",
+    "includeBackports": "Include Backports",
+    "components": "Componente",
+    "componentsHint": "main este software liber oficial; contrib, non-free și non-free-firmware adaugă software și drivere neliber.",
+    "includeSourcePackages": "Include pachete sursă (deb-src)",
+    "mirror": "Mirror",
+    "mirrorHint": "Serverul de pe care sistemul tău descarcă pachetele. Alege-l pe cel mai rapid pentru locația ta.",
+    "currentMirror": "Mirror curent",
+    "findFastest": "Găsește cel mai rapid mirror",
+    "testing": "Se testează…",
+    "statusTesting": "se testează…",
+    "measuringLatency": "Se măsoară latența…",
+    "statusFailed": "eșuat",
+    "progress": "Testate {tested} din {total} mirror-uri",
+    "recommended": "Recomandat",
+    "selected": "Selectat",
+    "use": "Folosește",
+    "detected": "Precompletat din depozitele tale actuale.",
+    "generate": "Generează lista de surse",
+    "generating": "Se generează…",
+    "successTitle": "Surse generate",
+    "successBody": "Fișierele depozitului au fost scrise și apt a fost actualizat."
+  },
+  "sidebar": {
+    "switchToLight": "Comută la tema deschisă",
+    "switchToDark": "Comută la tema închisă",
+    "aboutTooltip": "Despre Soplos Repo Selector (F1)",
+    "language": "Limbă"
+  },
+  "environment": {
+    "gnome": "GNOME",
+    "kde": "KDE Plasma",
+    "xfce": "XFCE",
+    "unknown": "Necunoscut",
+    "x11": "X11",
+    "wayland": "Wayland"
+  }
+}

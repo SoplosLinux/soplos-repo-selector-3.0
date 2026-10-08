@@ -1,0 +1,97 @@
+{
+  "app": {
+    "title": "Soplos Repo Selector",
+    "comingSoon": "Die Repository-Verwaltung folgt in Kürze.",
+    "tabs": {
+      "repositories": { "label": "Repositories", "title": "Repositories", "description": "Aktiviere, deaktiviere, füge APT-Softwarequellen hinzu oder entferne sie." },
+      "sourcesGenerator": { "label": "Quellen-Generator", "title": "Quellen-Generator", "description": "Erstelle Repositories aus Distributions-Vorlagen und finde den schnellsten Mirror." },
+      "gpgKeys": { "label": "GPG-Schlüssel", "title": "GPG-Schlüssel", "description": "Importiere, lade herunter und verwalte die Schlüssel, die deine Repositories verifizieren." }
+    }
+  },
+  "about": {
+    "version": "Version {version}",
+    "tagline": "Erweiterte APT-Repository-Verwaltung für Soplos Linux",
+    "copyright": "Copyright © 2026 Sergi Perich",
+    "license": "Lizenziert unter der GNU General Public License v3.0 oder später",
+    "website": "soplos.org"
+  },
+  "common": {
+    "cancel": "Abbrechen",
+    "ok": "OK",
+    "close": "Schließen",
+    "save": "Speichern",
+    "loading": "Wird geladen…",
+    "errorTitle": "Etwas ist schiefgelaufen"
+  },
+  "repositories": {
+    "enable": "Aktivieren",
+    "disable": "Deaktivieren",
+    "modernize": "Zu DEB822 modernisieren",
+    "edit": "Bearbeiten",
+    "delete": "Löschen",
+    "searchPlaceholder": "Repositories durchsuchen…",
+    "add": "Hinzufügen",
+    "apply": "Änderungen übernehmen",
+    "applying": "Wird übernommen…",
+    "empty": "Keine Repositories gefunden.",
+    "addTitle": "Repository hinzufügen",
+    "editTitle": "Repository bearbeiten",
+    "type": "Typ",
+    "uri": "URI",
+    "distribution": "Distribution",
+    "components": "Komponenten",
+    "signedBy": "Signed-By (Pfad zum GPG-Schlüssel)",
+    "deleteConfirmTitle": "Dieses Repository entfernen?",
+    "deleteConfirmBody": "Dies entfernt es nur aus der Liste — klicke auf \"Änderungen übernehmen\", um es zu speichern."
+  },
+  "gpg": {
+    "import": "Schlüssel importieren",
+    "unused": "Ungenutzt",
+    "unusedHint": "Keine konfigurierte Paketquelle verweist noch auf diesen Schlüssel",
+    "unusedSummary": "{count, plural, one {# Schlüssel wird} other {# Schlüssel werden}} von keiner konfigurierten Paketquelle mehr verwendet.",
+    "export": "Exportieren",
+    "confirmDelete": "Löschen bestätigen",
+    "fingerprint": "Fingerabdruck",
+    "expires": "Läuft ab",
+    "empty": "Keine GPG-Schlüssel gefunden."
+  },
+  "sourcesGenerator": {
+    "distributions": "Distributionen",
+    "distributionsHint": "Wähle die Debian-Versionen, für die du Pakete möchtest. Die meisten brauchen nur eine.",
+    "includeBackports": "Backports einbeziehen",
+    "components": "Komponenten",
+    "componentsHint": "main ist offizielle freie Software; contrib, non-free und non-free-firmware fügen unfreie Software und Treiber hinzu.",
+    "includeSourcePackages": "Quellpakete einbeziehen (deb-src)",
+    "mirror": "Mirror",
+    "mirrorHint": "Der Server, von dem dein System Pakete lädt. Wähle den schnellsten für deinen Standort.",
+    "currentMirror": "Aktueller Mirror",
+    "findFastest": "Schnellsten Mirror finden",
+    "testing": "Wird getestet…",
+    "statusTesting": "wird getestet…",
+    "measuringLatency": "Latenz wird gemessen…",
+    "statusFailed": "fehlgeschlagen",
+    "progress": "{tested} von {total} Mirrors getestet",
+    "recommended": "Empfohlen",
+    "selected": "Ausgewählt",
+    "use": "Verwenden",
+    "detected": "Mit deinen aktuellen Repositories vorausgefüllt.",
+    "generate": "Quellenliste erstellen",
+    "generating": "Wird erstellt…",
+    "successTitle": "Quellen erstellt",
+    "successBody": "Die Repository-Dateien wurden geschrieben und apt wurde aktualisiert."
+  },
+  "sidebar": {
+    "switchToLight": "Zum hellen Thema wechseln",
+    "switchToDark": "Zum dunklen Thema wechseln",
+    "aboutTooltip": "Über Soplos Repo Selector (F1)",
+    "language": "Sprache"
+  },
+  "environment": {
+    "gnome": "GNOME",
+    "kde": "KDE Plasma",
+    "xfce": "XFCE",
+    "unknown": "Unbekannt",
+    "x11": "X11",
+    "wayland": "Wayland"
+  }
+}
