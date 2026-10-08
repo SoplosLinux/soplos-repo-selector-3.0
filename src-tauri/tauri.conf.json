@@ -52,7 +52,11 @@
         "files": {
           "/usr/share/metainfo/org.soplos.reposelector.metainfo.xml": "resources/appstream/org.soplos.reposelector.metainfo.xml",
           "/usr/share/doc/soplos-repo-selector/copyright": "resources/debian/copyright",
-          "/usr/share/polkit-1/actions/org.soplos.reposelector.policy": "resources/polkit/org.soplos.reposelector.policy"
+          "/usr/share/polkit-1/actions/org.soplos.reposelector.policy": "resources/polkit/org.soplos.reposelector.policy",
+          "/usr/share/doc/soplos-repo-selector/screenshots/screenshot01.png": "resources/screenshots/screenshot01.png",
+          "/usr/share/doc/soplos-repo-selector/screenshots/screenshot02.png": "resources/screenshots/screenshot02.png",
+          "/usr/share/doc/soplos-repo-selector/screenshots/screenshot03.png": "resources/screenshots/screenshot03.png",
+          "/usr/share/doc/soplos-repo-selector/screenshots/screenshot04.png": "resources/screenshots/screenshot04.png"
         }
       }
     }

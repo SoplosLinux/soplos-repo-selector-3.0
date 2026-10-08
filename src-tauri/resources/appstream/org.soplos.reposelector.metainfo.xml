@@ -20,6 +20,25 @@
 
   <launchable type="desktop-id">org.soplos.reposelector.desktop</launchable>
 
+  <screenshots>
+    <screenshot type="default">
+      <image>screenshot01.png</image>
+      <caption>Repositories list, with repos enabled or disabled per source</caption>
+    </screenshot>
+    <screenshot>
+      <image>screenshot02.png</image>
+      <caption>Sources Generator: choosing distribution, components and mirror</caption>
+    </screenshot>
+    <screenshot>
+      <image>screenshot03.png</image>
+      <caption>Sources Generator: live mirror speed test</caption>
+    </screenshot>
+    <screenshot>
+      <image>screenshot04.png</image>
+      <caption>GPG Keys: imported Debian and third-party signing keys</caption>
+    </screenshot>
+  </screenshots>
+
   <provides>
     <binary>soplos-repo-selector</binary>
   </provides>
