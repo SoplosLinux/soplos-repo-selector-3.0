@@ -16,6 +16,11 @@
   export let appVersion: string;
 
   const openAbout = getContext<() => void>("openAbout");
+
+  // "3.0.0-1-beta" → "3.0.0-beta" — the footer shows the app version, not
+  // the Debian package revision (same rule as Welcome's and Sys Cleaner's
+  // Sidebar).
+  $: cleanVersion = appVersion.replace(/-\d+-/, "-");
 </script>
 
 <aside class="w-[230px] shrink-0 flex flex-col pt-[18px] px-[10px] pb-2 bg-panel border-r border-border">
@@ -66,7 +71,7 @@
         on:click={openAbout}
         title={$_("sidebar.aboutTooltip")}
       >
-        {appVersion}
+        {cleanVersion}
       </button>
     </div>
   </div>
