@@ -7,7 +7,24 @@
   <project_group>org.soploslinux</project_group>
 
   <name>Soplos Repo Selector</name>
+  <name xml:lang="en">Soplos Repo Selector</name>
+  <name xml:lang="es">Selector de Repositorios de Soplos</name>
+  <name xml:lang="fr">Sélecteur de Dépôts de Soplos</name>
+  <name xml:lang="de">Soplos Paketquellen-Auswahl</name>
+  <name xml:lang="pt">Seletor de Repositórios do Soplos</name>
+  <name xml:lang="it">Selettore di Repository di Soplos</name>
+  <name xml:lang="ro">Selector Depozite Soplos</name>
+  <name xml:lang="ru">Выбор репозиториев Soplos</name>
+
   <summary>Advanced APT repository manager for Soplos Linux</summary>
+  <summary xml:lang="en">Advanced APT repository manager for Soplos Linux</summary>
+  <summary xml:lang="es">Gestor avanzado de repositorios APT para Soplos Linux</summary>
+  <summary xml:lang="fr">Gestionnaire avancé de dépôts APT pour Soplos Linux</summary>
+  <summary xml:lang="de">Erweiterte APT-Paketquellen-Verwaltung für Soplos Linux</summary>
+  <summary xml:lang="pt">Gestor avançado de repositórios APT para o Soplos Linux</summary>
+  <summary xml:lang="it">Gestore avanzato di repository APT per Soplos Linux</summary>
+  <summary xml:lang="ro">Manager avansat de depozite APT pentru Soplos Linux</summary>
+  <summary xml:lang="ru">Расширенный менеджер репозиториев APT для Soplos Linux</summary>
 
   <description>
     <p>
@@ -15,6 +32,43 @@
       Linux: enable or disable repositories, modernize legacy .list files to
       DEB822 .sources, find the fastest mirrors with a real speed test, and
       manage GPG signing keys.
+    </p>
+    <p xml:lang="es">
+      El Selector de Repositorios de Soplos gestiona los repositorios de software
+      APT para Soplos Linux: activar o desactivar repositorios, modernizar archivos
+      .list al formato DEB822 .sources, encontrar los espejos más rápidos con test
+      de velocidad real y gestionar claves de firma GPG.
+    </p>
+    <p xml:lang="fr">
+      Le sélecteur de dépôts Soplos gère les dépôts logiciels APT pour Soplos Linux :
+      activer ou désactiver des dépôts, convertir les anciens fichiers .list au format
+      DEB822 .sources, trouver les miroirs les plus rapides et gérer les clés GPG.
+    </p>
+    <p xml:lang="de">
+      Die Soplos Paketquellen-Auswahl verwaltet APT-Softwarequellen für Soplos Linux:
+      Aktivieren oder Deaktivieren von Paketquellen, Modernisieren alter .list-Dateien
+      in das DEB822 .sources-Format, Ermitteln der schnellsten Spiegelserver und Verwalten
+      von GPG-Signaturschlüsseln.
+    </p>
+    <p xml:lang="pt">
+      O Seletor de Repositórios do Soplos gere os repositórios de software APT para o
+      Soplos Linux: ativar ou desativar repositórios, modernizar ficheiros .list antigos
+      para o formato DEB822 .sources, encontrar os espelhos mais rápidos e gerir chaves GPG.
+    </p>
+    <p xml:lang="it">
+      Il Selettore di Repository di Soplos gestisce i repository software APT per Soplos
+      Linux: attiva o disattiva repository, aggiorna i vecchi file .list al formato
+      DEB822 .sources, trova i mirror più veloci e gestisce le chiavi di firma GPG.
+    </p>
+    <p xml:lang="ro">
+      Selectorul de depozite Soplos gestionează depozitele de software APT pentru Soplos
+      Linux: activați sau dezactivați depozite, modernizați fișierele .list vechi în format
+      DEB822 .sources, găsiți cele mai rapide oglinzi și gestionați cheile GPG.
+    </p>
+    <p xml:lang="ru">
+      Выбор репозиториев Soplos управляет репозиториями программ APT для Soplos Linux:
+      включение и отключение репозиториев, перевод старых файлов .list в формат DEB822 .sources,
+      поиск быстрейших зеркал с тестом скорости и управление ключами подписи GPG.
     </p>
   </description>
 
@@ -24,18 +78,50 @@
     <screenshot type="default">
       <image>screenshot01.png</image>
       <caption>Repositories list, with repos enabled or disabled per source</caption>
+      <caption xml:lang="es">Lista de repositorios con activación y desactivación por fuente</caption>
+      <caption xml:lang="en">Repositories list, with repos enabled or disabled per source</caption>
+      <caption xml:lang="fr">Liste des dépôts avec activation ou désactivation par source</caption>
+      <caption xml:lang="de">Paketquellen-Liste mit Aktivierung oder Deaktivierung pro Quelle</caption>
+      <caption xml:lang="pt">Lista de repositórios com ativação ou desativação por fonte</caption>
+      <caption xml:lang="it">Elenco dei repository con attivazione o disattivazione per sorgente</caption>
+      <caption xml:lang="ro">Lista depozitelor cu activare sau dezactivare per sursă</caption>
+      <caption xml:lang="ru">Список репозиториев с включением и отключением по источникам</caption>
     </screenshot>
     <screenshot>
       <image>screenshot02.png</image>
       <caption>Sources Generator: choosing distribution, components and mirror</caption>
+      <caption xml:lang="es">Generador de fuentes: selección de distribución, componentes y espejo</caption>
+      <caption xml:lang="en">Sources Generator: choosing distribution, components and mirror</caption>
+      <caption xml:lang="fr">Générateur de sources : choix de la distribution, des composants et du miroir</caption>
+      <caption xml:lang="de">Quellengenerator: Auswahl von Distribution, Komponenten und Spiegelserver</caption>
+      <caption xml:lang="pt">Gerador de fontes: escolha de distribuição, componentes e espelho</caption>
+      <caption xml:lang="it">Generatore di sorgenti: selezione di distribuzione, componenti e mirror</caption>
+      <caption xml:lang="ro">Generator de surse: alegerea distribuției, componentelor și oglinzii</caption>
+      <caption xml:lang="ru">Генератор источников: выбор дистрибутива, компонентов и зеркала</caption>
     </screenshot>
     <screenshot>
       <image>screenshot03.png</image>
       <caption>Sources Generator: live mirror speed test</caption>
+      <caption xml:lang="es">Generador de fuentes: prueba de velocidad de espejos en tiempo real</caption>
+      <caption xml:lang="en">Sources Generator: live mirror speed test</caption>
+      <caption xml:lang="fr">Générateur de sources : test de vitesse des miroirs en direct</caption>
+      <caption xml:lang="de">Quellengenerator: Live-Geschwindigkeitstest der Spiegelserver</caption>
+      <caption xml:lang="pt">Gerador de fontes: teste de velocidade de espelhos em tempo real</caption>
+      <caption xml:lang="it">Generatore di sorgenti: test di velocità dei mirror in tempo reale</caption>
+      <caption xml:lang="ro">Generator de surse: test de viteză a oglinzilor în timp real</caption>
+      <caption xml:lang="ru">Генератор источников: проверка скорости зеркал в реальном времени</caption>
     </screenshot>
     <screenshot>
       <image>screenshot04.png</image>
       <caption>GPG Keys: imported Debian and third-party signing keys</caption>
+      <caption xml:lang="es">Claves GPG: claves de firma de Debian y de terceros importadas</caption>
+      <caption xml:lang="en">GPG Keys: imported Debian and third-party signing keys</caption>
+      <caption xml:lang="fr">Clés GPG : clés de signature Debian et tierces importées</caption>
+      <caption xml:lang="de">GPG-Schlüssel: importierte Debian- und Drittanbieter-Signaturschlüssel</caption>
+      <caption xml:lang="pt">Chaves GPG: chaves de assinatura do Debian e de terceiros importadas</caption>
+      <caption xml:lang="it">Chiavi GPG: chiavi di firma Debian e di terze parti importate</caption>
+      <caption xml:lang="ro">Chei GPG: chei de semnare Debian și terțe importate</caption>
+      <caption xml:lang="ru">Ключи GPG: импортированные ключи подписи Debian и сторонних репозиториев</caption>
     </screenshot>
   </screenshots>
 
@@ -50,6 +136,13 @@
   </developer>
 
   <releases>
+    <release version="3.0.0-2-beta" date="2026-10-19">
+      <description>
+        <p>Full 8-language internationalization across desktop launchers and AppStream metadata.</p>
+        <p>Added Unix manual page documentation (soplos-repo-selector.1) installed to /usr/share/man/man1/.</p>
+        <p>Updated Debian packaging and application documentation.</p>
+      </description>
+    </release>
     <release version="3.0.0-1-beta" date="2026-10-08">
       <description>
         <p>Unused GPG key detection and an updated sidebar icon.</p>

@@ -2,6 +2,14 @@
 
 All notable changes to Soplos Repo Selector are documented in this file.
 
+## [3.0.0-2-beta] - 2026-10-19
+
+### Added
+
+- Added Unix manual page documentation (`soplos-repo-selector.1`) installed to `/usr/share/man/man1/`.
+- Full 8-language translations for desktop entry (`soplos-repo-selector.desktop.hbs`) and AppStream metainfo.
+- Updated Debian packaging metadata and bumped project release to `3.0.0-2-beta`.
+
 ## [3.0.0-1-beta] - 2026-10-08
 
 ### Added

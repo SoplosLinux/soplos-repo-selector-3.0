@@ -1,0 +1,52 @@
+.TH "SOPLOS-REPO-SELECTOR" "1" "2026-10-19" "Soplos Linux" "User Commands"
+.SH NAME
+soplos-repo-selector \- Advanced APT repository and mirror manager for Soplos Linux
+.SH SYNOPSIS
+.B soplos-repo-selector
+[\fIOPTIONS\fR]
+.SH DESCRIPTION
+.B soplos-repo-selector
+is the official APT repository and package source management tool for Soplos Linux.
+Built with Tauri 2, Rust, and Svelte architecture, it provides an intuitive, reliable, and secure graphical interface to manage package archives:
+.IP \[bu] 2
+Inspects, enables, and disables configured repositories across \fI/etc/apt/sources.list\fR and \fI/etc/apt/sources.list.d/\fR.
+.IP \[bu]
+Modernizes legacy one-line \fI.list\fR configurations into modern Debian DEB822 \fI.sources\fR format.
+.IP \[bu]
+Sources Generator: lets users switch mirrors, enable source code repositories, and configure non-free components.
+.IP \[bu]
+Integrated real-world mirror speed tester to discover and apply the highest bandwidth Debian mirrors.
+.IP \[bu]
+Complete GPG keyring management: import, inspect, and remove signing keys with automatic detection of unused keys.
+.IP \[bu]
+Polkit-integrated privilege escalation for safe and controlled modifications to system configuration.
+.SH OPTIONS
+.TP
+.B \-h, \-\-help
+Show summary of options.
+.SH FILES
+.TP
+.I /etc/apt/sources.list
+Main Debian APT repository configuration file.
+.TP
+.I /etc/apt/sources.list.d/
+Directory for modular APT repository files (.sources and .list).
+.TP
+.I /etc/apt/keyrings/
+Standard location for trusted repository signing keys.
+.TP
+.I /usr/share/polkit-1/actions/org.soplos.reposelector.policy
+Polkit policy defining administrative permissions.
+.SH AUTHOR
+Written by Sergi Perich <info@soploslinux.com> for the Soplos Linux project.
+.SH COPYRIGHT
+Copyright \(co 2026 Sergi Perich <info@soploslinux.com>.
+.br
+License: GPL-3.0-or-later <https://www.gnu.org/licenses/gpl-3.0.html>.
+.br
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+.SH SEE ALSO
+.BR sources.list (5),
+.BR soplos-store (1),
+.BR soplos-welcome (1)
