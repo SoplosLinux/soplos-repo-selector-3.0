@@ -2,6 +2,24 @@
 
 All notable changes to Soplos Repo Selector are documented in this file.
 
+## [3.0.0-3-beta] - 2026-10-22
+
+### Added
+
+- `CHANGELOG.md` is installed as `/usr/share/doc/soplos-repo-selector/changelog.gz`.
+- AppStream metainfo: categories and keywords in the eight languages, the same ones as the desktop entry.
+- The Debian copyright now declares Lucide (ISC), used for the interface icons.
+- README: version, license, platform, Tauri, Rust and Svelte badges. The Sources Generator, one of the three views, is now described among the features, together with new sections on the dependencies (`pkexec`, `gnupg`) and on the files the program writes.
+
+### Changed
+
+- Manual page rewritten: the three views (Repositories, Sources Generator and GPG Keys), the internal `--run-privileged-script` option, keyboard shortcuts and files. It is installed compressed, as `/usr/share/man/man1/soplos-repo-selector.1.gz`.
+
+### Fixed
+
+- AppStream metainfo: the developer and project group identifiers were `org.soploslinux`. They are now `org.soplos`, matching the soplos.org domain and the other Soplos apps.
+- AppStream metainfo: the screenshots were bare file names instead of web addresses, so software centers could not show them and the file did not validate. They now use their `raw.githubusercontent.com` address.
+
 ## [3.0.0-2-beta] - 2026-10-19
 
 ### Added
@@ -22,4 +40,11 @@ All notable changes to Soplos Repo Selector are documented in this file.
 
 ## [3.0.0-alpha] - 2026-10-03
 
-Full architecture rewrite of Soplos Repo Selector, from Python 3 and GTK3 to Tauri 2 with a Rust backend and a Svelte frontend.
+Full architecture rewrite of Soplos Repo Selector, from Python 3 and GTK3 to Tauri 2 with a Rust backend and a Svelte frontend. See the Architecture section of the README for details.
+
+### Added
+
+- Rust backend (`src-tauri/`) replacing the Python 3 and GTK3 codebase. Every change to the system (writing repository files, converting `.list` files to `.sources`, importing or deleting GPG keys, creating `/etc/apt/keyrings`) goes through a single polkit-gated helper; the window itself never runs as root.
+- Svelte 4 and Tailwind CSS frontend (`src/`) with three views: Repositories (inspect, enable and disable every configured repository, and convert legacy `.list` files to the DEB822 `.sources` format), Sources Generator (Debian versions, components, source packages and mirror) and GPG Keys (import, export, inspect and remove signing keys, with fingerprint and expiry).
+- Live mirror speed test that streams real package index downloads to measure network throughput instead of ping latency.
+- Interface in eight languages: English, Spanish, German, French, Italian, Portuguese, Romanian and Russian. It starts in the system language.

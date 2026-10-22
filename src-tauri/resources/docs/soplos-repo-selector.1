@@ -1,42 +1,85 @@
-.TH "SOPLOS-REPO-SELECTOR" "1" "2026-10-19" "Soplos Linux" "User Commands"
+.TH "SOPLOS-REPO-SELECTOR" "1" "2026-10-21" "Soplos Linux" "User Commands"
 .SH NAME
-soplos-repo-selector \- Advanced APT repository and mirror manager for Soplos Linux
+soplos-repo-selector \- APT repository, mirror and signing key manager for Soplos Linux
 .SH SYNOPSIS
 .B soplos-repo-selector
 [\fIOPTIONS\fR]
 .SH DESCRIPTION
 .B soplos-repo-selector
-is the official APT repository and package source management tool for Soplos Linux.
-Built with Tauri 2, Rust, and Svelte architecture, it provides an intuitive, reliable, and secure graphical interface to manage package archives:
+manages the APT software sources of Soplos Linux from a graphical interface.
+Built with Tauri 2, Rust, and Svelte, it has three views:
 .IP \[bu] 2
-Inspects, enables, and disables configured repositories across \fI/etc/apt/sources.list\fR and \fI/etc/apt/sources.list.d/\fR.
+.B Repositories:
+inspect, enable and disable every repository configured in
+.I /etc/apt/sources.list
+and in
+.IR /etc/apt/sources.list.d/ ,
+and convert the legacy one-line
+.B .list
+format to Debian's DEB822
+.B .sources
+format.
 .IP \[bu]
-Modernizes legacy one-line \fI.list\fR configurations into modern Debian DEB822 \fI.sources\fR format.
+.B Sources Generator:
+switch mirrors, enable source code repositories and configure the non-free
+components. It also runs a live mirror speed test: it streams real package
+index downloads to measure the network throughput to each Debian mirror,
+instead of measuring ping latency, and applies the fastest one.
 .IP \[bu]
-Sources Generator: lets users switch mirrors, enable source code repositories, and configure non-free components.
-.IP \[bu]
-Integrated real-world mirror speed tester to discover and apply the highest bandwidth Debian mirrors.
-.IP \[bu]
-Complete GPG keyring management: import, inspect, and remove signing keys with automatic detection of unused keys.
-.IP \[bu]
-Polkit-integrated privilege escalation for safe and controlled modifications to system configuration.
+.B GPG Keys:
+import, export, inspect and remove repository signing keys, with their
+full fingerprint and expiry. A key that no configured repository references
+any more, and that does not belong to an installed package, is flagged as
+unused. Keyrings shipped by system packages are never flagged.
+.P
+The window never runs as root. Every change to the system goes through a single
+Polkit-gated helper, authenticated with
+.BR pkexec (1).
+.P
+The interface is available in English, Spanish, German, French, Italian,
+Portuguese, Romanian and Russian. It starts in the system language and falls
+back to English.
 .SH OPTIONS
 .TP
 .B \-h, \-\-help
 Show summary of options.
+.TP
+.B \-\-run-privileged-script \fIFILE\fR
+Internal Polkit-authenticated task: run the privileged script stored in
+.IR FILE .
+Used by the application itself through
+.BR pkexec (1)
+and not meant to be called by hand.
+.SH KEYBOARD SHORTCUTS
+.TP
+.B F1
+About dialog.
+.TP
+.B Ctrl+Q
+Quit the application.
+.TP
+.B Ctrl+Tab
+Next section.
+.TP
+.B Ctrl+Shift+Tab
+Previous section.
 .SH FILES
 .TP
 .I /etc/apt/sources.list
-Main Debian APT repository configuration file.
+Main APT repository configuration file.
 .TP
 .I /etc/apt/sources.list.d/
-Directory for modular APT repository files (.sources and .list).
+Directory of modular repository files, in
+.B .sources
+and
+.B .list
+format.
 .TP
 .I /etc/apt/keyrings/
-Standard location for trusted repository signing keys.
+Location of the repository signing keys. Created by the program when missing.
 .TP
 .I /usr/share/polkit-1/actions/org.soplos.reposelector.policy
-Polkit policy defining administrative permissions.
+Polkit policy defining the administrator privileges for changes to the sources and keys.
 .SH AUTHOR
 Written by Sergi Perich <info@soploslinux.com> for the Soplos Linux project.
 .SH COPYRIGHT
@@ -48,5 +91,7 @@ This is free software: you are free to change and redistribute it.
 There is NO WARRANTY, to the extent permitted by law.
 .SH SEE ALSO
 .BR sources.list (5),
+.BR apt-secure (8),
+.BR apt (8),
 .BR soplos-store (1),
 .BR soplos-welcome (1)

@@ -1,7 +1,11 @@
 # Soplos Repo Selector 3.0
 
-[![License: GPL-3.0+](https://img.shields.io/badge/License-GPL--3.0%2B-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-[![Version](https://img.shields.io/badge/version-3.0.0--2--beta-green.svg)]()
+![Version](https://img.shields.io/badge/version-3.0.0--3--beta-blue)
+![License](https://img.shields.io/badge/license-GPL--3.0--or--later-green)
+![Platform](https://img.shields.io/badge/platform-Linux-lightgrey)
+![Tauri](https://img.shields.io/badge/Tauri-2-orange)
+![Rust](https://img.shields.io/badge/Rust-1.80+-orange)
+![Svelte](https://img.shields.io/badge/Svelte-4-red)
 
 Advanced APT repository manager for Soplos Linux.
 
@@ -32,9 +36,25 @@ sudo apt install soplos-repo-selector
 
 - **Repository management**: inspect, enable, and disable every configured APT repository.
 - **DEB822 modernization**: convert legacy `/etc/apt/sources.list` and `.list` entries to Debian's modern DEB822 `.sources` format.
-- **Live mirror benchmark**: real-time streaming download tests to detect the fastest official Debian mirrors.
+- **Sources Generator**: pick the Debian versions (with optional Backports), the components (`main`, `contrib`, `non-free`, `non-free-firmware`), whether to include source packages (`deb-src`) and the mirror. It starts prefilled from your current repositories, writes the repository files and runs `apt update`.
+- **Live mirror benchmark**: real-time streaming download tests to detect the fastest official Debian mirrors, from the Sources Generator.
 - **Keyring management**: import, export, inspect, and remove GPG signing keys with full fingerprint and expiry details.
 - **Unused key detection**: automatically flags imported keys that are no longer referenced by any active repository and do not belong to an installed system package.
+
+## Dependencies
+
+- `pkexec` (Polkit) for every change to the system, and `gnupg` for the keys. Both are installed with the package.
+- `curl` and `wget` are recommended.
+
+## Where it writes
+
+| Path | Content |
+|---|---|
+| `/etc/apt/sources.list` | Main repository file |
+| `/etc/apt/sources.list.d/` | Modular repository files, in `.sources` and `.list` format |
+| `/etc/apt/keyrings/` | Repository signing keys. Created by the program when missing |
+
+Nothing is written without administrator authentication, and the window itself never runs as root.
 
 ## Keyboard shortcuts
 

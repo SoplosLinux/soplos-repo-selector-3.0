@@ -4,7 +4,7 @@
   <pkgname>soplos-repo-selector</pkgname>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <project_group>org.soploslinux</project_group>
+  <project_group>org.soplos</project_group>
 
   <name>Soplos Repo Selector</name>
   <name xml:lang="en">Soplos Repo Selector</name>
@@ -72,11 +72,91 @@
     </p>
   </description>
 
+  <categories>
+    <category>System</category>
+    <category>Settings</category>
+    <category>PackageManager</category>
+  </categories>
+
+  <keywords>
+    <keyword>repository</keyword>
+    <keyword>apt</keyword>
+    <keyword>software</keyword>
+    <keyword>gpg</keyword>
+    <keyword>debian</keyword>
+    <keyword>soplos</keyword>
+    <keyword>mirror</keyword>
+    <keyword>sources</keyword>
+    <keyword xml:lang="es">repositorio</keyword>
+    <keyword xml:lang="es">apt</keyword>
+    <keyword xml:lang="es">software</keyword>
+    <keyword xml:lang="es">gpg</keyword>
+    <keyword xml:lang="es">debian</keyword>
+    <keyword xml:lang="es">soplos</keyword>
+    <keyword xml:lang="es">espejos</keyword>
+    <keyword xml:lang="es">fuentes</keyword>
+    <keyword xml:lang="es">paquetes</keyword>
+    <keyword xml:lang="fr">dépôt</keyword>
+    <keyword xml:lang="fr">apt</keyword>
+    <keyword xml:lang="fr">logiciel</keyword>
+    <keyword xml:lang="fr">gpg</keyword>
+    <keyword xml:lang="fr">debian</keyword>
+    <keyword xml:lang="fr">soplos</keyword>
+    <keyword xml:lang="fr">miroirs</keyword>
+    <keyword xml:lang="fr">sources</keyword>
+    <keyword xml:lang="fr">paquets</keyword>
+    <keyword xml:lang="de">paketquelle</keyword>
+    <keyword xml:lang="de">repository</keyword>
+    <keyword xml:lang="de">apt</keyword>
+    <keyword xml:lang="de">software</keyword>
+    <keyword xml:lang="de">gpg</keyword>
+    <keyword xml:lang="de">debian</keyword>
+    <keyword xml:lang="de">soplos</keyword>
+    <keyword xml:lang="de">spiegelserver</keyword>
+    <keyword xml:lang="de">quellen</keyword>
+    <keyword xml:lang="pt">repositório</keyword>
+    <keyword xml:lang="pt">apt</keyword>
+    <keyword xml:lang="pt">software</keyword>
+    <keyword xml:lang="pt">gpg</keyword>
+    <keyword xml:lang="pt">debian</keyword>
+    <keyword xml:lang="pt">soplos</keyword>
+    <keyword xml:lang="pt">espelhos</keyword>
+    <keyword xml:lang="pt">fontes</keyword>
+    <keyword xml:lang="pt">pacotes</keyword>
+    <keyword xml:lang="it">repository</keyword>
+    <keyword xml:lang="it">apt</keyword>
+    <keyword xml:lang="it">software</keyword>
+    <keyword xml:lang="it">gpg</keyword>
+    <keyword xml:lang="it">debian</keyword>
+    <keyword xml:lang="it">soplos</keyword>
+    <keyword xml:lang="it">mirror</keyword>
+    <keyword xml:lang="it">sorgenti</keyword>
+    <keyword xml:lang="it">pacchetti</keyword>
+    <keyword xml:lang="ro">depozit</keyword>
+    <keyword xml:lang="ro">apt</keyword>
+    <keyword xml:lang="ro">software</keyword>
+    <keyword xml:lang="ro">gpg</keyword>
+    <keyword xml:lang="ro">debian</keyword>
+    <keyword xml:lang="ro">soplos</keyword>
+    <keyword xml:lang="ro">oglinzi</keyword>
+    <keyword xml:lang="ro">surse</keyword>
+    <keyword xml:lang="ro">pachete</keyword>
+    <keyword xml:lang="ru">репозиторий</keyword>
+    <keyword xml:lang="ru">apt</keyword>
+    <keyword xml:lang="ru">программы</keyword>
+    <keyword xml:lang="ru">gpg</keyword>
+    <keyword xml:lang="ru">debian</keyword>
+    <keyword xml:lang="ru">soplos</keyword>
+    <keyword xml:lang="ru">зеркала</keyword>
+    <keyword xml:lang="ru">источники</keyword>
+    <keyword xml:lang="ru">пакеты</keyword>
+  </keywords>
+
   <launchable type="desktop-id">org.soplos.reposelector.desktop</launchable>
 
   <screenshots>
     <screenshot type="default">
-      <image>screenshot01.png</image>
+      <image>https://raw.githubusercontent.com/SoplosLinux/soplos-repo-selector-3.0/main/src-tauri/resources/screenshots/screenshot01.png</image>
       <caption>Repositories list, with repos enabled or disabled per source</caption>
       <caption xml:lang="es">Lista de repositorios con activación y desactivación por fuente</caption>
       <caption xml:lang="en">Repositories list, with repos enabled or disabled per source</caption>
@@ -88,7 +168,7 @@
       <caption xml:lang="ru">Список репозиториев с включением и отключением по источникам</caption>
     </screenshot>
     <screenshot>
-      <image>screenshot02.png</image>
+      <image>https://raw.githubusercontent.com/SoplosLinux/soplos-repo-selector-3.0/main/src-tauri/resources/screenshots/screenshot02.png</image>
       <caption>Sources Generator: choosing distribution, components and mirror</caption>
       <caption xml:lang="es">Generador de fuentes: selección de distribución, componentes y espejo</caption>
       <caption xml:lang="en">Sources Generator: choosing distribution, components and mirror</caption>
@@ -100,7 +180,7 @@
       <caption xml:lang="ru">Генератор источников: выбор дистрибутива, компонентов и зеркала</caption>
     </screenshot>
     <screenshot>
-      <image>screenshot03.png</image>
+      <image>https://raw.githubusercontent.com/SoplosLinux/soplos-repo-selector-3.0/main/src-tauri/resources/screenshots/screenshot03.png</image>
       <caption>Sources Generator: live mirror speed test</caption>
       <caption xml:lang="es">Generador de fuentes: prueba de velocidad de espejos en tiempo real</caption>
       <caption xml:lang="en">Sources Generator: live mirror speed test</caption>
@@ -112,7 +192,7 @@
       <caption xml:lang="ru">Генератор источников: проверка скорости зеркал в реальном времени</caption>
     </screenshot>
     <screenshot>
-      <image>screenshot04.png</image>
+      <image>https://raw.githubusercontent.com/SoplosLinux/soplos-repo-selector-3.0/main/src-tauri/resources/screenshots/screenshot04.png</image>
       <caption>GPG Keys: imported Debian and third-party signing keys</caption>
       <caption xml:lang="es">Claves GPG: claves de firma de Debian y de terceros importadas</caption>
       <caption xml:lang="en">GPG Keys: imported Debian and third-party signing keys</caption>
@@ -131,11 +211,22 @@
 
   <url type="homepage">https://soplos.org</url>
 
-  <developer id="org.soploslinux">
+  <developer id="org.soplos">
     <name>Sergi Perich</name>
   </developer>
 
   <releases>
+    <release version="3.0.0-3-beta" date="2026-10-22">
+      <description>
+        <p>Documentation and packaging fixes.</p>
+        <ul>
+          <li>Manual page rewritten for the three views (Repositories, Sources Generator and GPG Keys) and installed compressed</li>
+          <li>AppStream categories and keywords in 8 languages; developer and project group identifiers now org.soplos; screenshots use web addresses</li>
+          <li>Changelog installed to /usr/share/doc/soplos-repo-selector/</li>
+          <li>Debian copyright declares Lucide (ISC), used for the interface icons</li>
+        </ul>
+      </description>
+    </release>
     <release version="3.0.0-2-beta" date="2026-10-19">
       <description>
         <p>Full 8-language internationalization across desktop launchers and AppStream metadata.</p>
