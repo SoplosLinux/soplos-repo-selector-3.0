@@ -1,4 +1,5 @@
 mod commands;
+mod system_theme;
 mod mirrors_data;
 pub(crate) mod privilege;
 pub(crate) mod utils;
@@ -22,6 +23,7 @@ pub fn run() {
         .plugin(tauri_plugin_shell::init())
         .plugin(tauri_plugin_dialog::init())
         .invoke_handler(tauri::generate_handler![
+            system_theme::get_system_theme,
             commands::environment::get_environment_info,
             commands::repos::list_repos,
             commands::repos::save_repos,
