@@ -2,6 +2,12 @@
 
 All notable changes to Soplos Repo Selector are documented in this file.
 
+## [3.0.0-5-beta] - 2026-10-24
+
+### Fixed
+
+- The list of mirrors of the speed test has its own scroll inside the page, and when the wheel reached its end it passed to the scroll of the page, so the two fought each other. The list now keeps the wheel to itself (`overscroll-contain`), the same as the results box of the hardware scan of Welcome.
+
 ## [3.0.0-4-beta] - 2026-10-23
 
 ### Added

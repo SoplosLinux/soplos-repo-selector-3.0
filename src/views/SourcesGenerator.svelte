@@ -212,7 +212,7 @@
     {/if}
 
     {#if displayedResults.length > 0}
-      <div class="flex flex-col gap-1.5 max-h-[320px] overflow-y-auto content-scroll">
+      <div class="flex flex-col gap-1.5 max-h-[320px] overflow-y-auto overscroll-contain content-scroll">
         {#each displayedResults as r, i (r.url)}
           {@const isTerminal = TERMINAL_STATUSES.has(r.status)}
           <div class="px-3 py-2 rounded border {mirror === r.url ? 'border-primary bg-primary/10' : 'border-border'}">

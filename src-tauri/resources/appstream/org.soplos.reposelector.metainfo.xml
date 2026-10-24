@@ -216,6 +216,11 @@
   </developer>
 
   <releases>
+    <release version="3.0.0-5-beta" date="2026-10-24">
+      <description>
+        <p>The list of mirrors of the speed test no longer fights with the scroll of the page: the wheel stays inside the list.</p>
+      </description>
+    </release>
     <release version="3.0.0-4-beta" date="2026-10-23">
       <description>
         <p>The window follows the light or dark theme of the desktop (Xfce, Plasma and GNOME); the button of the sidebar still lets you choose.</p>
