@@ -1,6 +1,6 @@
 [package]
 name = "soplos-repo-selector"
-version = "3.0.0-5-beta"
+version = "3.0.0-6-beta"
 description = "Soplos Repo Selector"
 authors = ["Sergi Perich <info@soploslinux.com>"]
 license = "GPL-3.0-or-later"

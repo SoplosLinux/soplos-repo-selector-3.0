@@ -2,6 +2,14 @@
 
 All notable changes to Soplos Repo Selector are documented in this file.
 
+## [3.0.0-6-beta] - 2026-10-28
+
+### Changed
+
+- New application icon, in the sizes of the package, the window and the interface.
+- New hero image, with the circuit style of the other Soplos 3.0 programs.
+- New screenshots of every page, taken with the interface in English.
+
 ## [3.0.0-5-beta] - 2026-10-24
 
 ### Fixed

@@ -216,6 +216,11 @@
   </developer>
 
   <releases>
+    <release version="3.0.0-6-beta" date="2026-10-28">
+      <description>
+        <p>New application icon, new hero image and new screenshots, taken with the interface in English.</p>
+      </description>
+    </release>
     <release version="3.0.0-5-beta" date="2026-10-24">
       <description>
         <p>The list of mirrors of the speed test no longer fights with the scroll of the page: the wheel stays inside the list.</p>
