@@ -1,5 +1,11 @@
 {
   "app": {
+    "window": {
+      "minimize": "Minimizează",
+      "maximize": "Maximizează",
+      "restore": "Restaurează",
+      "close": "Închide"
+    },
     "title": "Soplos Repo Selector",
     "comingSoon": "Gestionarea depozitelor va fi disponibilă în curând.",
     "tabs": {

@@ -85,15 +85,23 @@
       select(tabs[(idx + dir + tabs.length) % tabs.length].id);
     }
   }
+  import WindowControls from "./components/WindowControls.svelte";
+  import { frameless, maximized } from "./lib/window";
 </script>
 
 <svelte:window on:keydown={handleKeydown} />
 
-<div class="flex h-screen overflow-hidden">
+<div class="h-screen bg-dark {$frameless && !$maximized ? 'window-card' : ''}">
+<div class="flex h-full overflow-hidden">
   <Sidebar {tabs} {active} onSelect={select} {appVersion} />
 
   <div class="flex-1 flex flex-col overflow-hidden min-w-0">
-    <div class="p-4 pb-0 shrink-0">
+    {#if $frameless}
+      <div class="relative h-7 shrink-0" data-tauri-drag-region>
+        <div class="absolute right-2 top-[3px]"><WindowControls /></div>
+      </div>
+    {/if}
+    <div class="p-4 pb-0 shrink-0 {$frameless ? 'pt-0' : ''}" data-tauri-drag-region="deep">
       <div
         class="relative rounded border border-border overflow-hidden flex flex-col items-start justify-end p-4 min-h-[100px]"
         style="background: linear-gradient(rgba(20, 20, 22, 0.25), rgba(20, 20, 22, 0.82)), url('/assets/hero/repo-selector-background.jpg'); background-size: cover; background-position: center;"
@@ -111,3 +119,4 @@
 {#if aboutOpen}
   <AboutDialog onClose={() => (aboutOpen = false)} />
 {/if}
+</div>

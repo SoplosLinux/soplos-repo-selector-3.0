@@ -1,5 +1,11 @@
 {
   "app": {
+    "window": {
+      "minimize": "Réduire",
+      "maximize": "Agrandir",
+      "restore": "Restaurer",
+      "close": "Fermer"
+    },
     "title": "Soplos Repo Selector",
     "comingSoon": "La gestion des dépôts arrive bientôt.",
     "tabs": {
