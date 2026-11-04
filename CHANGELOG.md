@@ -2,6 +2,12 @@
 
 All notable changes to Soplos Repo Selector are documented in this file.
 
+## [3.0.0-8-beta] - 2026-11-04
+
+### Fixed
+
+- The application metadata points to the launcher that the package installs, `soplos-repo-selector.desktop`, so the software centers link the entry of the menu with the program.
+
 ## [3.0.0-7-beta] - 2026-10-29
 
 ### Changed
